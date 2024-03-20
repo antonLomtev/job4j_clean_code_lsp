@@ -23,17 +23,17 @@ class PrinterTest {
         menu.add("Вернуться домой", "Открыть дверь", STUB_ACTION);
         menu.add("Вернуться домой", "Welcome to home", STUB_ACTION);
         menu.add("Вернуться домой", "Закрыть двери на все засовы", STUB_ACTION);
-        String expected = "Выйти на улицу 1." + System.lineSeparator() +
-                "---Открыть дверь на выход 1.1." + System.lineSeparator() +
-                "---Закрыть дверь на ключ 1.2." + System.lineSeparator() +
-                "---Мы на улице 1.3." + System.lineSeparator() +
-                "------Идем гулять 1.3.1." + System.lineSeparator() +
-                "Вернуться домой 2." + System.lineSeparator() +
-                "---Подойти к двери 2.1." + System.lineSeparator() +
-                "---Открыть дверь ключом 2.2." + System.lineSeparator() +
-                "---Открыть дверь 2.3." + System.lineSeparator() +
-                "---Welcome to home 2.4." + System.lineSeparator() +
-                "---Закрыть двери на все засовы 2.5." + System.lineSeparator();
+        String expected = "Выйти на улицу 1." + System.lineSeparator()
+                + "---Открыть дверь на выход 1.1." + System.lineSeparator()
+                + "---Закрыть дверь на ключ 1.2." + System.lineSeparator()
+                + "---Мы на улице 1.3." + System.lineSeparator()
+                + "------Идем гулять 1.3.1." + System.lineSeparator()
+                + "Вернуться домой 2." + System.lineSeparator()
+                + "---Подойти к двери 2.1." + System.lineSeparator()
+                + "---Открыть дверь ключом 2.2." + System.lineSeparator()
+                + "---Открыть дверь 2.3." + System.lineSeparator()
+                + "---Welcome to home 2.4." + System.lineSeparator()
+                + "---Закрыть двери на все засовы 2.5." + System.lineSeparator();
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
         MenuPrinter printer = new Printer();

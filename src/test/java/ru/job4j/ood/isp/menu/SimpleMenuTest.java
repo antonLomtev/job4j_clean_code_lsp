@@ -54,7 +54,8 @@ public class SimpleMenuTest {
                 List.of("Идем гулять"), STUB_ACTION, "1.3.")).
                 isEqualTo(menu.select("Мы на улице").get());
         assertThat(new Menu.MenuItemInfo("Вернуться домой",
-                List.of("Подойти к двери", "Открыть дверь ключом", "Открыть дверь", "Welcome to home", "Закрыть двери на все засовы"), STUB_ACTION, "2."))
+                List.of("Подойти к двери", "Открыть дверь ключом", "Открыть дверь", "Welcome to home",
+                        "Закрыть двери на все засовы"), STUB_ACTION, "2."))
                 .isEqualTo(menu.select("Вернуться домой").get());
     }
 }
